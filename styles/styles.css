@@ -1,0 +1,805 @@
+
+/* setup codes start here */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+/* setup codes end here */
+
+/* base styles start here */
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Emblema One', cursive;
+}
+
+h1, h2, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* header styles start here */
+
+.mast-head {
+    
+    background: url("../assets/header-group-appliances.png"),rgba(245, 200, 207,0.6);
+    background-position: right bottom;
+    background-size: 50%;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+.mast-head h1 {
+    font-size: 5.23rem;
+    line-height: 4.37rem;
+    margin: 0;
+    padding-top: 7rem;
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+}
+
+.mast-head p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: 0.0125rem;
+    margin: 1rem 0 1rem;
+}
+
+.mast-head span {
+    display: block;
+}
+
+.top-nav {
+    background-color: rgba(245,200,207, 0.6);
+    width: 100%;
+    padding: 15px 100px 15px 5px;
+
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0  
+}
+
+.top-nav ul li {
+    padding: 0;
+    margin: 0 20px 0;
+    display: inline-block;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(31, 32, 34);
+}
+
+.top-nav ul li a:hover {
+    color: rgb(29, 129, 204);
+}
+
+.top-nav ul.h-menu {
+    float: right;
+    display: none;
+}
+
+.top-nav ul.h-menu li{
+    margin: 0;
+}
+
+.nav-list {
+    float: right;
+}
+
+.social-menu {
+    position: absolute;
+    right: 2rem;
+    bottom: 23rem;
+}
+
+.social-menu ul {
+    list-style: none;
+}
+
+.social-menu ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.social-menu ul li a {
+    text-decoration: none;
+    color: rgb(29, 129, 204);
+    font-size: 1rem;
+}
+
+.social-menu ul li:hover a {
+    color: rgb(31, 32, 34);
+}
+
+.social-menu ul li:focus a {
+    color: rgb(31, 32, 34);
+}
+
+/* section on new appliances and coffee appliances styled here */
+
+.new-appliances, 
+.coffee-appliances {
+    background: rgba(252, 221, 226,0.7);
+}
+
+.new-appliances img {
+    float: left;
+    margin: 0 15px;
+    width: calc(33.33% - 30px);
+    margin-top: 4rem;
+}
+
+.new-appliances h2 {
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+    font-size: 2.1rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.coffee-appliances img,
+.coffee-appliances .coffee-content {
+    float: left;
+    padding: 4rem 0;
+}
+
+.coffee-appliances img {
+    margin: 0.5rem 0.75rem;
+    width: calc(25% - 1.5rem);
+    
+}
+
+.coffee-appliances .coffee-content {
+    width: calc(75% - 1.5rem);
+}
+
+.coffee-appliances .coffee-content p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    margin-bottom: 1.35rem;
+}
+
+.coffee-appliances .coffee-content h2 {
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+    font-size: 2.1rem;
+}
+
+.coffee-appliances .coffee-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.30rem;
+    color: rgb(240, 245, 255);
+    background: rgb(4,34,89);
+}
+
+.coffee-appliances .coffee-content .read-more {
+    margin: 0;
+    padding: 0;
+}
+
+.coffee-appliances .coffee-content a:hover {
+    background: rgb(240, 245, 255);
+    color: rgb(4,34,89);
+}
+
+.coffee-appliances .coffee-content a:focus {
+    background: rgb(240, 245, 255);
+    color: rgb(4,34,89);
+}
+
+/* section on smoothies and new kitchen styled here */
+
+.smoothies-anyone,
+.new-kitchen {
+    background: rgb(240, 245, 255);
+}
+.smoothie-content, 
+.smoothies-anyone img {
+    float: right;
+    width: 50%;
+}
+
+.new-kitchen-content, 
+.new-kitchen img {
+    float: left;
+    width: 50%;
+}
+
+.smoothie-content {
+    padding: 4rem 0.5rem;
+}
+
+.new-kitchen-content {
+    padding: 4rem 4rem;
+}
+
+.smoothie-content h2,
+.new-kitchen-content h2 {
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+    font-size: 2.1rem;
+}
+
+.smoothie-content span,
+.new-kitchen-content span {
+    display: block;
+}
+
+.smoothie-content p,
+.new-kitchen-content p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+    margin-bottom: 1.35rem;
+
+}
+
+.smoothie-content a,
+.new-kitchen-content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0.30rem;
+    color: rgb(4,34,89);
+    background: rgb(245, 200, 207);
+}
+
+.smoothie-content a:hover,
+.new-kitchen-content a:hover {
+    background: rgb(4,34,89);
+    color: rgb(245, 200, 207);
+}
+
+.smoothie-content a:focus,
+.new-kitchen-content a:focus {
+    background: rgb(4,34,89);
+    color: rgb(245, 200, 207);
+}
+
+
+
+/* section on shop, jobs and events styled here */
+
+.shop-jobs-events {
+    background: rgba(252,221,226,0.7);
+}
+
+.shop,
+.jobs,
+.events {
+    float: left;
+    margin: 4rem 4rem;
+    width: calc(33.33% - 8rem);
+    text-align: center;
+    cursor: pointer;
+}
+
+.shop p,
+.jobs p,
+.events p {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: rgb(29, 129, 204);
+}
+
+.shop i,
+.jobs i,
+.events i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(4,34,89);
+}
+
+/* footer elements styled here */
+
+footer {
+    background: rgb(240,245,255);
+}
+
+.contact-form,
+.contact-info,
+.bottom-nav {
+    float: left;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-info {
+    width: 30%;
+}
+
+.bottom-nav {
+    width: 20%;
+}
+
+.contact-info {
+    margin: 2rem 0;
+}
+
+.contact-info h4 {
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.contact-info p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    text-transform: capitalize;
+
+}
+
+.contact-form {
+    margin: 2rem 0;
+}
+
+.contact-form h4 {
+    text-transform: uppercase;
+    color: rgb(29, 129, 204);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.contact-form p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type=email] {
+    width: 20rem;
+    height: 1.7rem;
+    border: 1px solid rgb(245, 200, 207);
+    padding-left: 1rem;
+    margin-top: 0.2rem;
+    font-family: 'Barlow', sans-serif;
+    float: left;
+}
+
+.contact-form input[type=email]:focus {
+    border: 1px solid rgb(4,34,89);
+}
+
+.contact-form input[type=email]::placeholder {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.8rem;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.contact-form input[type=submit] {
+    width: 7rem;
+    height: 1.7rem;
+    color: rgb(4,34,89);
+    background: rgb(245, 200, 207);
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 0.2rem;
+    float: left;
+}
+
+.contact-form input[type=submit]:hover {
+    color: rgb(245, 200, 207);
+    background: rgb(31, 32, 34);
+}
+
+.contact-form input[type=submit]:focus {
+    color: rgb(245, 200, 207);
+    background: rgb(31, 32, 34);
+}
+
+
+.bottom-nav ul {
+    list-style: none;
+    text-align: right;
+    margin: 2rem 0;
+    clear: both;
+}
+
+.bottom-nav ul li {
+    margin: 0.2rem 0;
+}
+
+.bottom-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: rgb(29, 129, 204);
+}
+
+.bottom-nav ul li:hover a {
+    color: rgb(245, 200, 207);
+}
+
+/* keyline styled here */
+
+.key-line {
+    background: rgb(4,34,89);
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    color: rgb(240, 245, 255);
+}
+
+.key-line p {
+    padding: 1.2rem;
+    text-transform: capitalize;
+}
+
+/* responsive styling starts here */
+
+
+/* For tablets and other large screen devices*/
+@media all and (max-width:1024px) {
+
+    html {
+        font-size: 75%;
+    }
+
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .mast-head {
+        height: 80vh;
+        background-size: 80%; 
+    }
+
+    .mast-head h1 {
+        font-size: 6.5rem;
+        line-height: 5.5rem;
+    }    
+    .top-nav {
+        padding: 0;
+    }
+    
+    .top-nav ul{
+        visibility: hidden;
+    }
+
+    .top-nav ul.h-menu {
+        visibility: visible;
+        display: block; 
+        font-size: 4rem;
+        padding-left: 40rem;
+    }    
+
+    .social-menu {
+        display: none;
+    }
+
+    .new-appliances h2 {
+        font-size: 4rem;
+    }
+
+    .new-appliances img:last-child {
+        display: none;
+    }
+
+    .new-appliances img {
+        margin: 0 5px;
+        width: calc(50% - 10px);
+        margin-top: 4rem;
+    }
+
+    .coffee-appliances img {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .coffee-appliances .coffee-content {
+        float: none;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1rem; 
+    }
+    .coffee-appliances .coffee-content h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .coffee-appliances .coffee-content span {
+        display: block;
+    }
+
+    .coffee-appliances .coffee-content p {
+        padding-top: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    .coffee-appliances .coffee-content .read-more {
+        text-align: center;
+        margin: 5rem 0;
+    }
+
+    .coffee-appliances .coffee-content a {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+
+    .smoothies-anyone {
+        background: rgba(252, 221, 226,0.7);
+    }
+
+    .smoothies-anyone .smoothie-content, 
+    .smoothies-anyone img {
+        float: none;
+        width: 100%;
+    }
+
+    .smoothies-anyone .smoothie-content span {
+        display: inline;
+    }
+
+    .smoothies-anyone .smoothie-content h2 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .smoothies-anyone .smoothie-content p {
+        padding: 4rem 0;
+        font-size: 2.5rem;
+    }
+
+    .smoothies-anyone .smoothie-content .read-more {
+        text-align: center;
+        margin: 3rem 0;
+    }
+
+    .smoothies-anyone .smoothie-content a {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+
+    .new-kitchen {
+        background: rgba(252, 221, 226,0.7);
+    }
+
+    .new-kitchen .new-kitchen-content,
+    .new-kitchen img {
+        float: none;
+        width: 100%;
+    } 
+
+    .new-kitchen .new-kitchen-content {
+        padding: 0;
+    }
+    .new-kitchen .new-kitchen-content span {
+        display: inline;
+    }
+
+    .new-kitchen .new-kitchen-content h2 {
+        text-align: center;
+        font-size: 4rem;
+        padding-top: 3rem;
+    }
+
+    .new-kitchen .new-kitchen-content p {
+        padding: 4rem 0;
+        font-size: 2.5rem;
+    }
+
+    .new-kitchen .new-kitchen-content .read-more {
+        text-align: center;
+        padding: 2rem 0 7rem;
+    }
+
+    .new-kitchen .new-kitchen-content a {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+
+    .shop-jobs-events {
+        background: rgb(245, 200, 207);
+    }
+
+    .shop,
+    .jobs,
+    .events {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 4rem 0;
+    }
+
+    .shop p,
+    .jobs p,
+    .events p { 
+        font-size: 3.5rem;
+    }
+
+    .shop i,
+    .jobs i,
+    .events i {
+        font-size: 5rem;
+    }
+
+    .contact-form {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding-top: 4rem;
+    }
+
+    .contact-info,
+    .bottom-nav {
+    width: 50%;
+    }
+
+    .contact-info {
+        padding-bottom: 6rem;
+    }
+
+    .contact-form {
+        padding-bottom: 2rem;
+    }
+
+    .contact-form h4 {
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 2rem 0 1rem;
+    }
+
+    .contact-form p {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .contact-form input[type=email] {
+        width: 100%;
+        height: 6rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .contact-form input[type=submit] {
+        width: 20rem;
+        height: 6rem;
+        font-size: 2.5rem;
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .contact-form input[type=email]::placeholder {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bottom-nav ul li a {
+        font-size: 2.5rem;
+    }
+
+    .contact-info span {
+        display: block;
+    }
+
+    .contact-info h4 {
+        font-size: 2.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1.65rem;
+    }
+
+    .key-line p{
+        font-size: 2rem;
+    }
+}
+
+/* for smaller tablets eg.Kinlde fire */
+@media all and (max-width:800px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    .wrapper {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .mast-head {
+        height: 80vh;
+        background-size: 70%; 
+    }
+}
+
+/* for large screen phones */
+@media all and (max-width: 680px) {
+    html {
+        font-size: 65%;
+    }
+
+    .wrapper {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+}
+
+/* for phone screens  */
+@media all and (max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+
+    .wrapper {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .mast-head {
+        height: 70vh;
+        background-size: 80%; 
+    }
+} 
+
+/* for phone screens */
+@media all and (max-width: 380px) {
+    html {
+        font-size: 40%;
+    }
+
+    .wrapper {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
+
+/* for phone screens */
+@media all and (max-width: 320px) {
+
+    .wrapper {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+}
+
+
+/* for all devices in lanscape mode */
+@media all and (orientation: landscape) {
+    .mast-head {
+        background-size: contain;
+    }
+
+    .mast-head h1 {
+        font-size: 6rem;
+        line-height: 5rem;
+
+    }
+}
