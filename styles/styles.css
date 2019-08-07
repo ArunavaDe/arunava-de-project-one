@@ -608,6 +608,13 @@ footer {
     .smoothies-anyone .smoothie-content a {
         font-size: 2.5rem;
         padding: 2rem;
+        color: rgb(240, 245, 255);
+        background: rgb(4,34,89);
+    }
+
+    .smoothies-anyone .smoothie-content a:hover {
+        background: rgb(240, 245, 255);
+        color: rgb(4,34,89);
     }
 
     .new-kitchen {
@@ -646,6 +653,13 @@ footer {
     .new-kitchen .new-kitchen-content a {
         font-size: 2.5rem;
         padding: 2rem;
+        color: rgb(240, 245, 255);
+        background: rgb(4,34,89);
+    }
+
+    .new-kitchen .new-kitchen-content a:hover {
+        background: rgb(240, 245, 255);
+        color: rgb(4,34,89);
     }
 
     .shop-jobs-events {
