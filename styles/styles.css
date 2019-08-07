@@ -460,7 +460,33 @@ footer {
 /* responsive styling starts here */
 
 
-/* For tablets and other large screen devices*/
+/* For laptops/tablets with larger screen and other similar devices devices*/
+@media all and (max-width:1300px) {
+    html {
+        font-size: 100%;
+    }
+
+    .wrapper {
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    .social-menu {
+        bottom: 30rem;
+    }
+}
+
+/* styling for smaller screen laptops and desktops */
+
+@media all and (max-width: 1200px) {
+    .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+/* styling for large screen tablets */
+
 @media all and (max-width:1024px) {
 
     html {
